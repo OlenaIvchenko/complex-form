@@ -9,6 +9,78 @@
     <title>complex-form</title>
 </head>
 <body>
-    
+    <div class="form__container container">
+        <h1 class="form__title title">Continue entering data</h1>
+        <form action="#" method="POST" class="form__form form">
+            <div class="name name__form">
+                <div class="input input__form">
+                    <label class="input__label " for="firstName">First Name</label>
+                    <input class="input__input name__input" type="name" required id="firstName" >
+                </div>
+                <div class="input input__form">
+                    <label class="input__label" for="lastName">Last Name</label>
+                    <input class="input__input name__input" type="name" required id="lastName" >
+                </div>
+            </div>
+            <div class="input input__form">
+                <label class="input__label" for="phone">Phone Number</label>
+                <input class="input__input input--phone" type="phone" minlength="9" maxlength="15" required id="phone">
+            </div>   
+            <div class="input input__form">
+                <label class="input__label" for="country">Country</label>
+                <input class="input__input" type="text" required id="country" >
+            </div>
+            <div class="contact contact__adress">
+                <div class="input input__form">
+                    <label class="input__label" for="city">City</label>
+                    <input class="input__input" type="text" required id="city" >
+                </div>
+                <div class="input input__form">
+                    <label class="input__label" for="street">Street</label>
+                    <input class="input__input" type="text" required id="street" >
+                </div>
+            </div>
+            <div class="gender__wrapper">
+                <div class="text gender__text">Legal Gender</div>
+                <div class="gender__radio">
+                    <div class="radio gender__radio-box">
+                        <input class="input__radio" type="radio" id="male" name="gender">
+                        <label class="label__radio" for="male">Male</label>
+                    </div>
+                    <div class="radio gender__radio-box">
+                        <input class="input__radio" type="radio" id="female" name="gender">
+                        <label class="label__radio" for="female">Female</label>
+                    </div>
+                    <div class="radio gender__radio-box">
+                        <input class="input__radio" type="radio" id="other" name="gender">
+                        <label class="label__radio" for="other">Other</label>
+                    </div>
+                </div>
+            </div>
+            <div class="notify__wrapper">
+                <div class="text notify__text">Notify me about...</div>
+                <div class="radio notify__radio-box">
+                    <input class="input__radio" type="radio" id="about" name="about">
+                    <label class="label__radio" for="about">All new messages</label>
+                
+                </div>
+                <div class="radio notify__radio-box">
+                    <input class="input__radio" type="radio" id="aboutTwo" name="about">
+                    <label class="label__radio" for="aboutTwo">Direct messages, mentions & keywords</label>
+                </div>
+                <div class="radio notify__radio-box">
+                    <input class="input__radio" type="radio" id="aboutThree" name="about">
+                    <label class="label__radio" for="aboutThree">Nothing</label>
+                </div>
+            </div>
+            <div class="checkbox__wrapper">
+                <label class="chechbox checkbox__label" for="checkbox">Notify me about replies to threads I’m following
+                    <input class="checkbox__input" type="checkbox" required id="checkbox">
+                    <span class="checkbox__style"></span>
+                </label>
+            </div>
+            <button class="button">Start Application</button>
+        </form>
+    </div>
 </body>
 </html>
