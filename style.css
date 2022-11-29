@@ -164,6 +164,10 @@ body {
     padding: 6px 28px 5px 0px;
 }
 
+.radio-gender {
+    margin-right: 40px;
+}
+
 .notify__radio-box {
     position: relative;
 }
@@ -188,10 +192,6 @@ body {
     cursor: pointer;
     left: 20px;
     display: inline-block;
-    line-height: 117.5%;
-    font-weight: 400;
-    font-size: 1.6rem;
-    color: var(--radio-label-color);
 }
 
 .input__radio:checked+.label__radio::before,
@@ -231,6 +231,28 @@ body {
  border: 1px solid var(--button-hover-input-focus-color);
 }
 
+.label__radio {
+line-height: 117.5%;
+font-weight: 400;
+font-size: 1.6rem;
+color: var(--radio-label-color);
+}
+
+
+
+.label__radio:hover {
+    color: #59D4AD;
+}
+ 
+
+.input__radio + .label__radio {
+    transition: all 0.3s ease 0s;
+    border-radius: 4px;
+}
+
+.input__radio:focus + .label__radio{
+    box-shadow: 0px 0px 0px 1px  #59D4AD;
+}
 
 
 .checkbox__wrapper {
